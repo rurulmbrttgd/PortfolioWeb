@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugadi Works</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8e3f140b9.js" crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("xUqIFxehCVvquUVor");
+        })();
+    </script>
+</head>
+
+
+
+<body>
+    <div id="contact">
+        <div id="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Home">
+                  </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <div>
+                    <img src="images/4.gif" class="header-picture" alt="">
+                </div>
+                <div class="header-text">
+                    <h1><span>CONTACT ME</span><br></h1>
+                    <p>Brgy. Marinig, Cabuyao City <br>
+                        Laguna 4025 Philippines <br />
+                    </p>
+                    <p>Follow me here!</p>
+                    <a href="https://www.facebook.com/rurulmbrttgd" target="_blank" rel="noopener" title="Facebook Profile">
+                        <i class="fa-brands fa-square-facebook"></i>
+                      </a>
+                      <a href="https://www.instagram.com/rurulmbrttgd" target="_blank" rel="noopener" title="Instagram Profile">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/ronald-lambert-tugadi-686544283" target="_blank" rel="noopener" title="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin"></i>
+                      </a>
+                      <a href="https://github.com/rurulmbrttgd" target="_blank" rel="noopener" title="Github Profile">
+                        <i class="fa-brands fa-square-github"></i>
+                      </a>
+                </div>
+                <div class="mid-container">
+                    <input type="text" id="fullName" placeholder="Full Name" required /><br />
+                    <input type="email" id="email_id" placeholder="Email" required /><br />
+                    <textarea id="message" placeholder="Message" required></textarea><br />
+                    <button class="send-btn" onclick="SendMail()">Send</button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <p>© Tugadi Works | All Rights Reserved 2023 </p>
+
+    </footer>
+    </body>

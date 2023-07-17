@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugadi Works</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="Home">
+                  </a>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>Hi there!</p>
+                    <h1>I'm <span>Ronald Lambert Tugadi</span><br></h1>
+                    <p class="typewriter">A Computer Science Student at Polytechnic University of the Philippines</p>
+                </div>
+                <div>
+                    <img src="images/1.gif" class="header-picture" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2.gif" alt="Logo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Ronald Lambert N. Tugadi, Ron for short, studying Bachelor of Science 
+                        in one of the prestigous school in the Philippines, Polytechnic University 
+                        of the Philippines Manila.<br>
+                        I have a basic knowledge and background in C, Java, Javascript, Python, and R.<br>
+                        <br/>
+                        I am also a traditional artist who is interested in learning more about Graphic Design.                        
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!---- Technical skills---->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Basic knowledge in Web Development</li>
+                            <li><span>Software Development</span><br>Basic knowledge in App Development</li>
+                            <li><span>Graphic Design</span><br>Poster, Banner, Logo Making</li>
+                        </ul>
+                    </div>
+                    <!---- Experience ---->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Ice Scramblelicious | 2021-2022</span><br>Graphic Design</li>
+                            <li><span>City Civil Registrar's Office | 2020</span><br>Assistant</li>
+                            <li><span>Lazada Logistic</span><br>Mobile Unit Encoder</li>
+                        </ul>
+                    </div>
+                    <!---- Education ---->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2008-2014</span><br>NORTH MARINIG ELEMENTARY SCHOOL</li>
+                            <li><span>2014-2018</span><br>GULOD NATIONAL HIGH SCHOOL</li>
+                            <li><span>2018-2020</span><br>CITI GLOBAL COLLEGE</li>
+                            <li><span>2020-CURRENT</span><br>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button class="download-button" onclick="downloadFile()">Download Resume</button>
+    </div>
+
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <p>© Tugadi Works | All Rights Reserved 2023 </p>
+
+    </footer>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script> 
+    <script>
+        function downloadFile() {
+            const link = document.createElement('a');
+            link.href = 'pdf/Resume-Tugadi.pdf'; // Replace with the actual file URL
+            link.download = 'Resume-Tugadi.pdf'; // Replace with the desired file name and extension
+            link.click();
+        }
+    </script>
+    <script src="typewriter.js"></script>
+    <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>
